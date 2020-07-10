@@ -1,0 +1,24 @@
+@mixin headers {
+    font-family: 'Merriweather', serif;
+    @content;
+}
+
+@mixin regularText {
+  font-family: 'Roboto', sans-serif;
+  @content;
+}
+
+// Default body text.
+body {
+  p {
+    @include regularText
+  };
+  
+  // Font for h1, h2, h3 headers.
+  h1, h2, h3 {
+    @include headers
+  }
+}
+
+
+
