@@ -1,0 +1,12 @@
+/* Importing reset-css from NPM.*/
+@import "~/reset-css/reset.css";
+
+/* Some sane defaults go here, the rest is provided by Sass modules and overrides in Svelte components */
+body {
+  background: #ddd;
+  line-height: 1.75em;
+}
+
+section {
+  padding: 1em;
+}
